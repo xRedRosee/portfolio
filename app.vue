@@ -1,4 +1,10 @@
 <template>
-  <div>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
+
+<script setup>
+</script>
+
+<style lang="css"></style>
