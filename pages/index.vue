@@ -49,6 +49,7 @@ body {
     font-style: italic;
     margin: 0;
     margin-left: 100px;
+    animation: 0.5s ease-out slideInTitle;
 }
 
 .page-text {
@@ -58,6 +59,27 @@ body {
     font-size: 50px;
     margin-left: 100px;
     margin-top: 15px;
+    animation: 0.5s ease-out slideInText;
+}
+
+@keyframes slideInTitle {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInText {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* -------------------------------------------- media queries */
