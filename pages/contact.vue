@@ -1,5 +1,6 @@
 <template>
     <NavBar></NavBar>
+    <h1> Contact </h1>
 </template>
 
 <script>
