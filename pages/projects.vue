@@ -1,6 +1,6 @@
 <template>
     <NavBar></NavBar>
-    <h1 class="page-title"> Projects </h1>
+    <h1 class="page-heading"> Projects </h1>
 </template>
 
 <script>

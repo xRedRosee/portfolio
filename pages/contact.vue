@@ -1,6 +1,6 @@
 <template>
     <NavBar></NavBar>
-    <h1 class="page-title"> Contact </h1>
+    <h1 class="page-heading"> Contact </h1>
 </template>
 
 <script>
