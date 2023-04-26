@@ -183,6 +183,8 @@ export default {
 
     .nav-list.active {
         display: flex;
+        height: 100%;
+        justify-content: flex-start;
     }
 
     .nav-text {
