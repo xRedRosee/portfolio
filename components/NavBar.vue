@@ -13,6 +13,7 @@ export default {
         hamburgerMenu() {
             // select the items from HTML
             const r = document.querySelector(':root');
+            const navbar = document.querySelector('.navbar');
 
             if (this.hamburgerMenuPressed == false) {
                 // open hamburger
@@ -20,6 +21,10 @@ export default {
                 r.style.setProperty('--opacitylines', 'none');
                 r.style.setProperty('--opacityexit', 'block');
                 r.style.setProperty('--navbarposition', 'fixed');
+
+                navbar.style.setProperty('height', '100%');
+                navbar.style.setProperty('justify-content', 'flex-end');
+
                 document.querySelector("#exit").innerText = 'X';
                 return this.hamburgerMenuPressed = true;
             } else if (this.hamburgerMenuPressed == true) {
@@ -28,6 +33,10 @@ export default {
                 r.style.setProperty('--opacitylines', 'block');
                 r.style.setProperty('--opacityexit', 'none');
                 r.style.setProperty('--navbarposition', 'absolute');
+
+                navbar.style.setProperty('height', '50px');
+                navbar.style.setProperty('justify-content', 'center');
+
                 document.querySelector("#exit").innerText = 'X';
                 return this.hamburgerMenuPressed = false;
             }
@@ -61,7 +70,7 @@ export default {
     </nav>
 </template>
 
-<style lang="css">
+<style>
 @import url("https://use.typekit.net/xup3qvy.css");
 
 :root {
@@ -187,6 +196,7 @@ export default {
         padding: 0;
         height: 50px;
         position: var(--navbarposition);
+        z-index: 99;
     }
 
     .nav-list {

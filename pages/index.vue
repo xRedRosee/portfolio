@@ -1,8 +1,10 @@
 <template>
     <NavBar></NavBar>
-    <article class="intro-text">
-        <h1 class="page-title"> Hey, <br> I'm Iris Roemermann </h1>
-        <p class="page-text"> ICT & Media Design student </p>
+    <article class="intro-container">
+        <div class="intro-textfield">
+            <h1 class="page-title"> Hey, <br> I'm Iris Roemermann </h1>
+            <p class="page-text"> ICT & Media Design student </p>
+        </div>
     </article>
 </template>
 
@@ -13,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style>
 @import url("https://use.typekit.net/xup3qvy.css");
 
 :root {
@@ -29,18 +31,47 @@ body {
     padding: 0;
 }
 
-.intro-text {}
+.intro-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.intro-textfield {
+    position: absolute;
+    top: 50%;
+}
 
 .page-title {
     font-family: var(--headingfont);
     color: var(--white);
-    font-size: 60px;
+    font-size: 70px;
     font-style: italic;
+    margin: 0;
+    margin-left: 100px;
 }
 
 .page-text {
     font-family: var(--normalfont);
     color: var(--white);
     font-weight: 100;
+    font-size: 50px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+/* -------------------------------------------- media queries */
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 48px;
+        margin: 0;
+        margin-left: 20px;
+    }
+
+    .page-text {
+        font-size: 20px;
+        margin: 0;
+        margin-left: 20px;
+    }
 }
 </style>
