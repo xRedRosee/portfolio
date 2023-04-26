@@ -1,6 +1,9 @@
 <template>
     <NavBar></NavBar>
-    <h1 class="page-title"> Home </h1>
+    <article class="intro-text">
+        <h1 class="page-title"> Hey, <br> I'm Iris Roemermann </h1>
+        <p class="page-text"> ICT & Media Design student </p>
+    </article>
 </template>
 
 <script>
@@ -26,8 +29,18 @@ body {
     padding: 0;
 }
 
+.intro-text {}
+
 .page-title {
     font-family: var(--headingfont);
     color: var(--white);
+    font-size: 60px;
+    font-style: italic;
+}
+
+.page-text {
+    font-family: var(--normalfont);
+    color: var(--white);
+    font-weight: 100;
 }
 </style>
