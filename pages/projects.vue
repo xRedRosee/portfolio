@@ -22,6 +22,8 @@ export default {
 
 body {
     background-color: var(--black);
+    margin: 0;
+    padding: 0;
 }
 
 .page-title {
