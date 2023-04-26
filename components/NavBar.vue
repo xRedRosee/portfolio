@@ -6,32 +6,30 @@ export default {
     },
     data() {
         return {
-            hamburgerMenuPressed: false,
+            hamburgerOpen: false,
         }
     },
     methods: {
         hamburgerMenu() {
-            // select the items from HTML
-            const r = document.querySelector(':root');
+            const navBar = document.querySelector('.navbar');
+            const navList = document.querySelector('.nav-list');
+            const hamburger = document.querySelector('.hamburgermenu');
 
-            if (this.hamburgerMenuPressed == false) {
-                // open hamburger
-                r.style.setProperty('--navbardisplay', 'flex');
-                r.style.setProperty('--opacitylines', 'none');
-                r.style.setProperty('--opacityexit', 'block');
-                r.style.setProperty('--navbarposition', 'fixed');
-                document.querySelector("#exit").innerText = 'X';
-                return this.hamburgerMenuPressed = true;
-            } else if (this.hamburgerMenuPressed == true) {
+            if (this.hamburgerOpen == false) {
+                // open the hamburger        
+                navBar.classList.toggle("active");
+                navList.classList.toggle("active");
+                hamburger.classList.toggle("active");
+                return this.hamburgerOpen = true;
+
+            } else if (this.hamburgerOpen == true) {
                 // close hamburger
-                r.style.setProperty('--navbardisplay', 'none');
-                r.style.setProperty('--opacitylines', 'block');
-                r.style.setProperty('--opacityexit', 'none');
-                r.style.setProperty('--navbarposition', 'absolute');
-                document.querySelector("#exit").innerText = 'X';
-                return this.hamburgerMenuPressed = false;
+                navBar.classList.remove("active");
+                navList.classList.remove("active");
+                hamburger.classList.remove("active");
+                return this.hamburgerOpen = false;
             }
-        },
+        }
     }
 }
 </script>
@@ -53,15 +51,14 @@ export default {
             </li>
         </ul>
         <button class="hamburgermenu" @click="hamburgerMenu">
-            <span id="line1"></span>
-            <span id="line2"></span>
-            <span id="line3"></span>
-            <span id="exit"> X </span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
         </button>
     </nav>
 </template>
 
-<style lang="css">
+<style>
 @import url("https://use.typekit.net/xup3qvy.css");
 
 :root {
@@ -69,10 +66,6 @@ export default {
     --normalfont: "owners", sans-serif;
     --white: white;
     --black: black;
-    --navbardisplay: none;
-    --opacitylines: block;
-    --opacityexit: none;
-    --navbarposition: static;
 }
 
 .navbar {
@@ -141,37 +134,16 @@ export default {
     display: none;
 }
 
-#line1 {
+.line {
     width: 30px;
     height: 2px;
     background-color: var(--white);
-    margin-block: 3px;
-    display: var(--opacitylines);
+    margin: 5px auto;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-#line2 {
-    width: 30px;
-    height: 2px;
-    background-color: var(--white);
-    margin-block: 3px;
-    display: var(--opacitylines);
-}
-
-#line3 {
-    width: 30px;
-    height: 2px;
-    background-color: var(--white);
-    margin-block: 3px;
-    display: var(--opacitylines);
-}
-
-#exit {
-    display: var(--opacityexit);
-    font-size: 1.5em;
-    font-family: arbotek, sans-serif;
-    font-weight: 100;
-    color: var(--white);
-}
 
 /* -------------------------------------------- media queries */
 @media screen and (max-width: 768px) {
@@ -186,23 +158,34 @@ export default {
         margin: 0;
         padding: 0;
         height: 50px;
-        position: var(--navbarposition);
+        z-index: 99;
+    }
+
+    .navbar.active {
+        position: fixed;
     }
 
     .nav-list {
         list-style: none;
         margin: 0;
         padding: 0;
-        display: var(--navbardisplay);
+        display: none;
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-evenly;
-        position: absolute;
         right: 0;
-        width: 50%;
+        width: 100%;
         top: 40px;
+        z-index: 99;
+        position: fixed;
+        background-color: var(--black);
     }
 
+    .nav-list.active {
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+    }
 
     .nav-text {
         margin-right: 16px;
@@ -213,38 +196,17 @@ export default {
         display: block;
     }
 
-    #line1 {
-        display: var(--opacitylines);
-        margin-right: 18px;
+
+    .hamburgermenu.active .line:nth-child(2) {
+        opacity: 0;
     }
 
-    #line2 {
-        display: var(--opacitylines);
-        margin-right: 18px;
+    .hamburgermenu.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
     }
 
-    #line3 {
-        display: var(--opacitylines);
-        margin-right: 18px;
-    }
-
-    #exit {
-        display: var(--opacityexit);
-        font-size: 40px;
-        font-weight: 100;
-        font-family: var(--normalfont);
-        margin-right: 18px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 8000px) {
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .navbar {
-        position: static;
+    .hamburgermenu.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
 </style>
