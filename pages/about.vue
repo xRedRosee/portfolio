@@ -1,11 +1,13 @@
 <template>
     <NavBar></NavBar>
     <h1 class="page-heading"> About me </h1>
+    <Introduction></Introduction>
     <h1 class="page-heading"> My skills </h1>
 </template>
 
 <script>
 import NavBar from '/././components/NavBar.vue';
+import Introduction from '~/components/Introduction.vue';
 export default {
 
 }
