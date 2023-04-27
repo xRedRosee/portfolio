@@ -57,4 +57,37 @@ export default {
 .intro-img {
     height: 380px;
 }
+
+/* -------------------------------------------- media queries */
+@media screen and (max-width: 768px) {
+    .introduction {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        align-items: flex-start;
+    }
+
+    .intro-textside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro-text {
+        font-size: 18px;
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .intro-imageside {
+        width: 100%;
+    }
+
+    .intro-img {
+        width: 85%;
+        height: auto;
+        margin-top: 30px;
+    }
+}
 </style>
