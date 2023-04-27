@@ -4,12 +4,25 @@
         <h1 class="page-heading"> About me </h1>
         <Introduction></Introduction>
         <h1 class="page-heading"> My skills </h1>
+        <div class="skills-table">
+            <img src="../assets/html-logo.svg" class="skills-img">
+            <img src="../assets/css-logo.svg" class="skills-img">
+            <img src="../assets/js-logo.svg" class="skills-img">
+            <img src="../assets/vue-logo.svg" class="skills-img">
+            <img src="../assets/nuxt-logo.svg" class="skills-img">
+            <img src="../assets/photoshop-logo.svg" class="skills-img">
+            <img src="../assets/illustrator-logo.svg" class="skills-img">
+            <img src="../assets/indesign-logo.svg" class="skills-img">
+            <img src="../assets/premierepro-logo.svg" class="skills-img">
+            <img src="../assets/figma-logo.svg" class="skills-img">
+        </div>
     </main>
 </template>
 
 <script>
 import NavBar from '/././components/NavBar.vue';
 import Introduction from '~/components/Introduction.vue';
+
 export default {
 
 }
@@ -25,6 +38,10 @@ export default {
     font-style: italic;
 }
 
+/* -------------------------------------------- skills table */
+.skills-table {}
+
+.skills-img {}
 
 /* -------------------------------------------- media queries */
 @media screen and (max-width: 768px) {
