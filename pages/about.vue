@@ -19,6 +19,7 @@ export default {
     color: var(--white);
     font-size: 50px;
     font-weight: 500;
-    margin-left: 60px;
+    margin-left: 80px;
+    font-style: italic;
 }
 </style>
