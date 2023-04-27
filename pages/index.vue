@@ -115,5 +115,9 @@ body {
         margin: 0;
         margin-left: 20px;
     }
+
+    .intro-textfield {
+        word-break: break-word;
+    }
 }
 </style>

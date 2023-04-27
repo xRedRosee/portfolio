@@ -61,7 +61,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
-    gap: 20px;
+    gap: 40px;
 }
 
 .frontend-skills {
@@ -99,6 +99,43 @@ export default {
         font-weight: 500;
         margin-left: 0;
         width: 80%;
+    }
+
+    /* -------------------------------------------- skills table */
+    .skills-table {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        gap: 20px;
+    }
+
+    .frontend-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .design-skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .skills-img {
+        width: 60%;
+        height: auto;
     }
 }
 </style>
