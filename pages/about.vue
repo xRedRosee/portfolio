@@ -7,18 +7,18 @@
         <section class="skills">
             <div class="skills-table">
                 <div class="frontend-skills">
-                    <img src="../assets/html.png" class="skills-img">
-                    <img src="../assets/css.png" class="skills-img">
-                    <img src="../assets/js.png" class="skills-img">
-                    <img src="../assets/vue.png" class="skills-img">
-                    <img src="../assets/nuxt.png" class="skills-img">
+                    <img src="../assets/html.png" class="skills-img" alt="HTML 5 logo">
+                    <img src="../assets/css.png" class="skills-img" alt="CSS logo">
+                    <img src="../assets/js.png" class="skills-img" alt="JavaScript logo">
+                    <img src="../assets/vue.png" class="skills-img" alt="Vue logo">
+                    <img src="../assets/nuxt.png" class="skills-img" alt="Nuxt logo">
                 </div>
                 <div class="design-skills">
-                    <img src="../assets/photoshop.png" class="skills-img">
-                    <img src="../assets/illustrator.png" class="skills-img">
-                    <img src="../assets/indesign.png" class="skills-img">
-                    <img src="../assets/premierepro.png" class="skills-img">
-                    <img src="../assets/figma.png" class="skills-img">
+                    <img src="../assets/photoshop.png" class="skills-img" alt="Adobe Photoshop logo">
+                    <img src="../assets/illustrator.png" class="skills-img" alt="Adobe Illustrator logo">
+                    <img src="../assets/indesign.png" class="skills-img" alt="Adobe InDesign logo">
+                    <img src="../assets/premierepro.png" class="skills-img" alt="Adobe Premiere Pro logo">
+                    <img src="../assets/figma.png" class="skills-img" alt="Figma logo">
                 </div>
             </div>
         </section>
@@ -28,13 +28,22 @@
 <script>
 import NavBar from '/././components/NavBar.vue';
 import Introduction from '~/components/Introduction.vue';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default {
-
+    methods: {
+    }
 }
 </script>
 
 <style>
+@import url("https://unpkg.com/aos@2.3.1/dist/aos.css");
+
+.about-page {
+    margin-top: 60px;
+}
+
 .page-heading {
     font-family: var(--headingfont);
     color: var(--white);
@@ -92,6 +101,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 0;
     }
 
     .page-heading {
