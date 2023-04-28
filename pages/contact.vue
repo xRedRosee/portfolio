@@ -4,6 +4,15 @@
         <h1 class="page-heading"> Get in touch with me </h1>
         <p class="page-heading-smalltext">Want to have a talk with me about a new challenge? <br>
             Feel free to contact me on my email or social media! </p>
+
+        <section class="contact-info">
+            <div class="email-side">
+                <h2 class="contact-info-h2"> Email </h2>
+            </div>
+            <div class="socialmedia-side">
+                <h2 class="contact-info-h2"> Social Media </h2>
+            </div>
+        </section>
     </main>
 </template>
 
