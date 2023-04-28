@@ -1,6 +1,6 @@
 <template>
     <figure class="social-media-block">
-        <img :src=SocialImage class="social-media-icon">
+        <img :src=Img class="social-media-icon">
         <figcaption class="social-media-name"><a :href=SocialMediaLink class="social-media-name"> {{ SocialMediaName
         }}
             </a></figcaption>
@@ -11,8 +11,9 @@
 export default {
     name: 'SocialMedia',
     props: {
-        SocialImage: {
+        Img: {
             type: String,
+            default: '',
             required: true
         },
         SocialMediaName: String,

@@ -12,12 +12,12 @@
             </div>
             <div class="socialmedia-side">
                 <h2 class="contact-info-h2"> Social Media </h2>
-                <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="xRedRosee"
+                <SocialMedia Img="assets/social/github.svg" SocialMediaName="xRedRosee"
                     SocialMediaLink="https://github.com/xRedRosee">
                 </SocialMedia>
-                <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="Iris Roemermann"
+                <SocialMedia Img="assets/social/linkedin.svg" SocialMediaName="Iris Roemermann"
                     SocialMediaLink="https://www.linkedin.com/in/iris-roemermann"></SocialMedia>
-                <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="fotografie_byiris"
+                <SocialMedia Img="assets/social/insta.svg" SocialMediaName="fotografie_byiris"
                     SocialMediaLink="https://www.instagram.com/fotografie_byiris"></SocialMedia>
             </div>
         </section>
