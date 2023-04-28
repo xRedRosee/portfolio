@@ -12,6 +12,13 @@
             </div>
             <div class="socialmedia-side">
                 <h2 class="contact-info-h2"> Social Media </h2>
+                <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="xRedRosee"
+                    SocialMediaLink="https://github.com/xRedRosee">
+                </SocialMedia>
+                <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="Iris Roemermann"
+                    SocialMediaLink=""></SocialMedia>
+                <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="fotografie_byiris"
+                    SocialMediaLink=""></SocialMedia>
             </div>
         </section>
     </main>
@@ -19,6 +26,9 @@
 
 <script>
 import NavBar from '/././components/NavBar.vue';
+import SocialMedia from '~/components/SocialMedia.vue';
+
+
 export default {
 
 }
