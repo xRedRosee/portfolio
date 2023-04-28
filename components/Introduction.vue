@@ -11,7 +11,7 @@
             </p>
         </article>
         <figure class="intro-imageside">
-            <img class="intro-img" src="../assets/imageik.jpg">
+            <img class="intro-img" src="../assets/imageik.jpg" alt="image of myself">
         </figure>
     </section>
 </template>
