@@ -1,7 +1,8 @@
 <template>
     <figure class="social-media-block">
         <img :src=SocialImage class="social-media-icon">
-        <figcaption class="social-media-name"><a href={{ SocialMediaLink }} class="social-media-name"> {{ SocialMediaName }}
+        <figcaption class="social-media-name"><a :href=SocialMediaLink class="social-media-name"> {{ SocialMediaName
+        }}
             </a></figcaption>
     </figure>
 </template>

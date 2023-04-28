@@ -16,9 +16,9 @@
                     SocialMediaLink="https://github.com/xRedRosee">
                 </SocialMedia>
                 <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="Iris Roemermann"
-                    SocialMediaLink=""></SocialMedia>
+                    SocialMediaLink="https://www.linkedin.com/in/iris-roemermann"></SocialMedia>
                 <SocialMedia SocialImage="src/assets/icons/cupcake.svg" SocialMediaName="fotografie_byiris"
-                    SocialMediaLink=""></SocialMedia>
+                    SocialMediaLink="https://www.instagram.com/fotografie_byiris"></SocialMedia>
             </div>
         </section>
     </main>
