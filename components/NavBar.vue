@@ -163,6 +163,7 @@ export default {
 
     .navbar.active {
         position: fixed;
+        top: 0;
     }
 
     .nav-list {
