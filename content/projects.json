@@ -3,14 +3,14 @@
         {
             "id": 1,
             "name": "Sugar & Sweet website",
-            "img": "bakerywebsite-img.jpg",
+            "img": "Projects/bakerywebsite-img.jpg",
             "tools": "#Vue #HTML #CSS #JavaScript #JSON",
             "description": "aaaaaa"
         },
         {
             "id": 2,
             "name": "Sugar & Sweet website",
-            "img": "bakerywebsite-img.jpg",
+            "img": "Projects/bakerywebsite-img.jpg",
             "tools": "#Vue #HTML #CSS #JavaScript #JSON",
             "description": "aaaaaa"
         }
