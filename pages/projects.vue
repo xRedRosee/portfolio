@@ -2,8 +2,8 @@
     <NavBar></NavBar>
     <h1 class="page-heading"> Projects </h1>
     <section class="projects">
-        <ul class="project-container">
-            <ProjectCard v-for="p in projectList" :key="p.id" :Name="p.name" :Img="p.img"></ProjectCard>
+        <ul class="projects-container">
+            <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img"></ProjectCard>
         </ul>
     </section>
 </template>
@@ -44,11 +44,20 @@ export default {
 </script>
 
 <style>
-.projects {}
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
-.projects-contrainer {
+.projects-container {
+    width: 80%;
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 </style>

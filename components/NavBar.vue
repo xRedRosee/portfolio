@@ -44,7 +44,7 @@ export default {
                 <NuxtLink to="/about" class="nav-text">About</NuxtLink>
             </li>
             <li class="nav-item">
-                <NuxtLink to="/projects" class="nav-text">Projects</NuxtLink>
+                <NuxtLink to="/projects/" class="nav-text">Projects</NuxtLink>
             </li>
             <li class="nav-item">
                 <NuxtLink to="/contact" class="nav-text">Contact</NuxtLink>
