@@ -51,12 +51,13 @@ export default {
 }
 
 .projects-container {
-    width: 80%;
+    width: 90%;
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }

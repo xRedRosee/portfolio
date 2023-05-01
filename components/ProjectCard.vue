@@ -42,6 +42,7 @@ export default {
     font-size: 20px;
     font-weight: normal;
     margin: 0;
+    margin-top: 10px;
 }
 
 .see-more {
@@ -51,6 +52,7 @@ export default {
     margin: 0;
     text-decoration: none;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .see-more:visited {

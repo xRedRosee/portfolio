@@ -5,13 +5,39 @@
             "name": "Sugar & Sweet website",
             "img": "bakerywebsite-img.jpg",
             "tools": "#Vue #HTML #CSS #JavaScript #JSON",
+            "imgmockup": "bakerywebsite-mockup.jpg",
             "description": "aaaaaa"
         },
         {
             "id": 2,
-            "name": "Sugar & Sweet website",
-            "img": "bakerywebsite-img.jpg",
-            "tools": "#Vue #HTML #CSS #JavaScript #JSON",
+            "name": "Pokemon TCG website",
+            "img": "tcgwebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "tcgwebsite-mockup.jpg",
+            "description": "aaaaaa"
+        },
+        {
+            "id": 3,
+            "name": "Restyled Stradivarius homepage",
+            "img": "stradivariuswebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "stradivariuswebsite-mockup.jpg",
+            "description": "aaaaaa"
+        },
+        {
+            "id": 3,
+            "name": "Restyled Stradivarius homepage",
+            "img": "stradivariuswebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "stradivariuswebsite-mockup.jpg",
+            "description": "aaaaaa"
+        },
+        {
+            "id": 3,
+            "name": "Restyled Stradivarius homepage",
+            "img": "stradivariuswebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "stradivariuswebsite-mockup.jpg",
             "description": "aaaaaa"
         }
     ]
