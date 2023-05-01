@@ -8,16 +8,15 @@
         <section class="contact-info">
             <div class="email-side">
                 <h2 class="contact-info-h2"> Email </h2>
-                <a href="mailto:irisrn2004@hotmail.com" class="email-adress"> irisrn2004@hotmail.com </a>
+                <a href="mailto:irisrn2004@hotmail.com" target="_blank" class="email-adress"> irisrn2004@hotmail.com </a>
             </div>
             <div class="socialmedia-side">
                 <h2 class="contact-info-h2"> Social Media </h2>
-                <SocialMedia Img="assets/social/github.svg" SocialMediaName="xRedRosee"
-                    SocialMediaLink="https://github.com/xRedRosee">
+                <SocialMedia Img="github.svg" SocialMediaName="xRedRosee" SocialMediaLink="https://github.com/xRedRosee">
                 </SocialMedia>
-                <SocialMedia Img="assets/social/linkedin.svg" SocialMediaName="Iris Roemermann"
+                <SocialMedia Img="linkedin.svg" SocialMediaName="Iris Roemermann"
                     SocialMediaLink="https://www.linkedin.com/in/iris-roemermann"></SocialMedia>
-                <SocialMedia Img="assets/social/insta.svg" SocialMediaName="fotografie_byiris"
+                <SocialMedia Img="insta.svg" SocialMediaName="fotografie_byiris"
                     SocialMediaLink="https://www.instagram.com/fotografie_byiris"></SocialMedia>
             </div>
         </section>
