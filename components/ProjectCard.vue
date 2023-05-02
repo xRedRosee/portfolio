@@ -47,7 +47,6 @@ export default {
         SeeDetail() {
             // open modal
             this.modalAlreadyOpen = true;
-            document.querySelector('.projects').style.SetProperty('overflow', 'hidden');
         },
         CloseModal() {
             // close modal
@@ -91,6 +90,7 @@ export default {
     background: none;
     border: none;
     outline: none;
+    padding: 0;
 }
 
 .see-more:visited {
@@ -156,6 +156,7 @@ export default {
 
 .detail-img {
     width: 90%;
+    height: auto;
 }
 
 .detail-text {
@@ -183,5 +184,47 @@ export default {
     width: 80%;
     font-size: 21px;
     font-weight: normal;
+}
+
+/* -------------------------------------------- media queries */
+@media screen and (max-width: 768px) {
+    .page-heading {
+        font-size: 50px;
+        font-weight: 500;
+        margin-left: 0;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* --------------------------------- project detail pop up */
+    .project-detail {
+        overflow: auto;
+        align-items: center;
+    }
+
+    .detail-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .detail-name {
+        margin-left: 0;
+        margin-top: 70px;
+    }
+
+    .img-container {
+        width: 100%;
+    }
+
+    .detail-img {
+        width: 95%;
+    }
+
+    .detail-text {
+        width: 100%;
+    }
 }
 </style>
