@@ -3,7 +3,8 @@
     <h1 class="page-heading"> Projects </h1>
     <section class="projects">
         <ul class="projects-container">
-            <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img"></ProjectCard>
+            <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img" :ProjectTools="p.tools"
+                :ProjectDesc="p.description" :Mockup="p.imgmockup"></ProjectCard>
         </ul>
     </section>
 </template>
@@ -29,17 +30,6 @@ export default {
         this.getData()
     }
 }
-
-// let projects = []
-
-// function displayProjects() {
-//     fetch('projects.json')
-//         .then(res => res.json())
-//         .then(data => projects.push(data.Projects))
-//     console.log(projects)
-// }
-
-// displayProjects()
 
 </script>
 
