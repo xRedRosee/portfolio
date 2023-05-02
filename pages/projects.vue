@@ -52,8 +52,15 @@ export default {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 25px;
     flex-wrap: wrap;
+}
+
+/* -------------------------------------------- media queries */
+@media screen and (max-width: 768px) {
+    .projects-container {
+        justify-content: center;
+    }
 }
 </style>
