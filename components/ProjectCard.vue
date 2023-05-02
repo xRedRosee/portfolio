@@ -10,7 +10,9 @@
         <button class="close-btn"> &#10005; </button>
         <h1 class="detail-name"> {{ ProjectName }}</h1>
         <div class="detail-section">
-            <img :src="Mockup" class="detail-img">
+            <figure class="img-container">
+                <img :src="Mockup" class="detail-img">
+            </figure>
             <article class="detail-text">
                 <p class="detail-tools"> {{ ProjectTools }}</p>
                 <p class="detail-desc"> {{ ProjectDesc }}</p>
@@ -90,6 +92,9 @@ export default {
     background-color: var(--black);
     position: fixed;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .close-btn {
@@ -111,20 +116,48 @@ export default {
 .detail-name {
     font-size: 50px;
     font-weight: 500;
-    margin-left: 0;
-    width: 90%;
+    margin-left: 80px;
     text-align: center;
     color: var(--white);
     font-family: var(--headingfont);
+    font-style: italic;
+    margin-top: 60px;
 }
 
-.detail-section {}
+.detail-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
 
-.detail-img {}
+.img-container {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
 
-.detail-text {}
+.detail-img {
+    width: 100%;
+}
 
-.detail-tools {}
+.detail-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.detail-desc {}
+.detail-tools {
+    color: var(--white);
+    font-family: var(--normalfont);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.detail-desc {
+    color: var(--white);
+    font-family: var(--normalfont);
+    text-align: left;
+}
 </style>
