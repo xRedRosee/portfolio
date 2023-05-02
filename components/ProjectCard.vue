@@ -134,30 +134,38 @@ export default {
     margin: 0;
     padding: 0;
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .detail-img {
-    width: 100%;
+    width: 90%;
 }
 
 .detail-text {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .detail-tools {
-    color: var(--white);
+    color: rgb(152, 152, 152);
     font-family: var(--normalfont);
     margin-top: 20px;
     text-align: left;
+    width: 80%;
+    font-size: 21px;
+    font-weight: normal;
 }
 
 .detail-desc {
     color: var(--white);
     font-family: var(--normalfont);
     text-align: left;
+    width: 80%;
+    font-size: 21px;
+    font-weight: normal;
 }
 </style>
