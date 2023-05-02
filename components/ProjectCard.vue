@@ -47,16 +47,25 @@ export default {
         SeeDetail() {
             // open modal
             this.modalAlreadyOpen = true;
+            const body = document.querySelector('body');
+            body.classList.add('stop-scrolling');
         },
         CloseModal() {
             // close modal
             this.modalAlreadyOpen = false;
+            const body = document.querySelector('body');
+            body.classList.remove('stop-scrolling');
         }
     }
 }
 </script>
 
 <style>
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 .project-card {
     margin: 0;
     padding: 0;
@@ -152,6 +161,7 @@ export default {
     width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .detail-img {

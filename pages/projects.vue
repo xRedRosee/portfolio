@@ -34,6 +34,11 @@ export default {
 </script>
 
 <style>
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 .projects {
     width: 100%;
     display: flex;
