@@ -1,5 +1,5 @@
 <template>
-    <li class="project-card">
+    <li class="project-card" @click="SeeDetail()">
         <img class="project-img" :src="Img">
         <figcaption class="project-text">
             <h2 class="project-name"> {{ ProjectName }}</h2>
@@ -47,6 +47,7 @@ export default {
         SeeDetail() {
             // open modal
             this.modalAlreadyOpen = true;
+            document.querySelector('.projects').style.SetProperty('overflow', 'hidden');
         },
         CloseModal() {
             // close modal
@@ -56,7 +57,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .project-card {
     margin: 0;
     padding: 0;
