@@ -12,7 +12,7 @@
 <script>
 import NavBar from '/././components/NavBar.vue';
 import ProjectCard from '/././components/ProjectCard.vue';
-const JsonFile = await import('~/public/projects.json');
+const JsonFile = await import('~/src/projects.json');
 
 export default {
     data() {

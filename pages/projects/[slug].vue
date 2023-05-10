@@ -13,7 +13,7 @@
     </div>
 </template>
 <script>
-const JsonFile = await import('~/public/projects.json');
+const JsonFile = await import('~/src/projects.json');
 const route = useRoute();
 
 export default {

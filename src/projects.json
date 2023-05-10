@@ -37,13 +37,22 @@
             "description": "I designed a logo for my own name using Adobe Illustrator. I choose the color black and white because they give a minimalistic look to the logo. Later on I created several mockups with the logo in Adobe Photoshop to learn how to create mockups using Photoshop. This logo was designed for a study project."
         },
         {
-            "id": 3,
-            "name": "Restyled Stradivarius homepage",
-            "slug": "Restyled-Stradivarius-homepage",
-            "img": "stradivariuswebsite-img.jpg",
-            "tools": "#HTML #CSS #JavaScript #JSON",
-            "imgmockup": "stradivariuswebsite-mockup.jpg",
-            "description": "aaaaaa"
+            "id": 5,
+            "name": "Snake Game",
+            "slug": "snake-game",
+            "img": "snakegame-img.jpg",
+            "tools": "#HTML #CSS #JavaScript",
+            "imgmockup": "snakegame-mockup.jpg",
+            "description": "A recreation of the popular retro acarde game Snake. I used HTML CSS and JavaScript to create the snake game. It has bombs as obstacles and food for extra points, just like to original. The game is created using HTML canvas and I made it for my study."
+        },
+        {
+            "id": 6,
+            "name": "Car display with XBOX controller",
+            "slug": "car-display",
+            "img": "cardisplay-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #API",
+            "imgmockup": "cardisplay-mockup.jpg",
+            "description": "I created a car display using HTML CSS and JavaScript, but not just an ordinary car display web page: no this one can be controlled using an XBOX controller! Connect your XBOX controller through BlueTooth and you can control the car display using the controller itself!"
         }
     ]
 }
