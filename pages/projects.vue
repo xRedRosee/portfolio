@@ -4,7 +4,7 @@
     <section class="projects">
         <ul class="projects-container">
             <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img" :ProjectTools="p.tools"
-                :ProjectDesc="p.description" :Mockup="p.imgmockup"></ProjectCard>
+                :ProjectDesc="p.description" :Mockup="p.imgmockup" :slug="p.slug"></ProjectCard>
         </ul>
     </section>
 </template>
@@ -23,7 +23,6 @@ export default {
     methods: {
         async getData() {
             this.projectList = JsonFile.Projects;
-            console.log(this.projectList)
         }
     },
     mounted() {

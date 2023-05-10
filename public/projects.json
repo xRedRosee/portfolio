@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Sugar & Sweet website",
+            "slug": "sugar-sweet-website",
             "img": "bakerywebsite-img.jpg",
             "tools": "#Vue #HTML #CSS #JavaScript #JSON",
             "imgmockup": "bakerywebsite-mockup.jpg",
@@ -11,6 +12,7 @@
         {
             "id": 2,
             "name": "Pokemon TCG website",
+            "slug": "Pokemon-TCG-website",
             "img": "tcgwebsite-img.jpg",
             "tools": "#HTML #CSS #JavaScript #JSON",
             "imgmockup": "tcgwebsite-mockup.jpg",
@@ -19,6 +21,7 @@
         {
             "id": 3,
             "name": "Restyled Stradivarius homepage",
+            "slug": "Restyled-Stradivarius-homepage",
             "img": "stradivariuswebsite-img.jpg",
             "tools": "#HTML #CSS #JavaScript #JSON",
             "imgmockup": "stradivariuswebsite-mockup.jpg",
@@ -27,6 +30,7 @@
         {
             "id": 3,
             "name": "Restyled Stradivarius homepage",
+            "slug": "Restyled-Stradivarius-homepage",
             "img": "stradivariuswebsite-img.jpg",
             "tools": "#HTML #CSS #JavaScript #JSON",
             "imgmockup": "stradivariuswebsite-mockup.jpg",
@@ -35,6 +39,7 @@
         {
             "id": 3,
             "name": "Restyled Stradivarius homepage",
+            "slug": "Restyled-Stradivarius-homepage",
             "img": "stradivariuswebsite-img.jpg",
             "tools": "#HTML #CSS #JavaScript #JSON",
             "imgmockup": "stradivariuswebsite-mockup.jpg",
