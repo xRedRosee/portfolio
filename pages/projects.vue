@@ -54,5 +54,26 @@ export default {
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 </style>

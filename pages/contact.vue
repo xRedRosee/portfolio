@@ -46,7 +46,31 @@ export default {
     font-weight: 500;
     margin-left: 80px;
     font-style: italic;
+    animation: 0.5s ease-out slideInTitle;
 }
+
+@keyframes slideInTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideInTitle {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .page-heading-smalltext {
     font-family: var(--normalfont);
@@ -64,6 +88,27 @@ export default {
     flex-direction: row;
     width: 80%;
     margin-top: 60px;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .email-side {

@@ -43,6 +43,27 @@ export default {
     margin-top: 20px;
     margin-left: 80px;
     width: 60%;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro-imageside {
@@ -52,6 +73,27 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro-img {
