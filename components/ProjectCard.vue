@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink :to="page" variant="primary">
+    <NuxtLink :to="page" variant="primary" class="projectlink">
         <li class="project-card">
             <img class="project-img" :src="Img">
             <figcaption class="project-text">
@@ -57,6 +57,10 @@ export default {
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
+}
+
+.project-link {
+    text-decoration: none;
 }
 
 .project-card {

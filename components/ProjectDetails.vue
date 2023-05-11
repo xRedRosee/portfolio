@@ -1,5 +1,6 @@
 <template>
     <div class="project-detail">
+        <NuxtLink to="/projects/" class="close-btn"> &#10005; </NuxtLink>
         <h1 class="detail-name"> {{ ProjectName }}</h1>
         <div class="detail-section">
             <figure class="img-container">
@@ -15,6 +16,9 @@
 <script>
 export default {
     name: "ProjectDetails",
+    setup() {
+        const route = useRoute()
+    },
     props: {
         ProjectName: String,
         Mockup: String,
@@ -36,7 +40,7 @@ export default {
     align-items: flex-start;
 }
 
-/* .close-btn {
+.close-btn {
     color: white;
     font-family: var(--normalfont);
     font-size: 30px;
@@ -50,7 +54,7 @@ export default {
     outline: none;
     position: absolute;
     right: 20px;
-} */
+}
 
 .detail-name {
     font-size: 50px;
