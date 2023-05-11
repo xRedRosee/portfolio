@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="slug" variant="primary">
+    <NuxtLink :to="page" variant="primary">
         <li class="project-card">
             <img class="project-img" :src="Img">
             <figcaption class="project-text">
@@ -7,12 +7,15 @@
                 <button class="see-more"> See more &rarr;</button>
             </figcaption>
         </li>
-    </nuxt-link>
+    </NuxtLink>
 </template>
 
 <script>
 export default {
     name: "ProjectCard",
+    setup() {
+        const route = useRoute()
+    },
     data() {
         return {
             modalAlreadyOpen: false,
@@ -31,7 +34,7 @@ export default {
         },
         ProjectTools: String,
         ProjectDesc: String,
-        slug: String,
+        page: String,
     },
     // methods: {
     //     SeeDetail() {

@@ -1,6 +1,6 @@
 <template>
     <div class="project-detail">
-        <h1 class="detail-name"> test {{ ProjectName }}</h1>
+        <h1 class="detail-name"> {{ ProjectName }}</h1>
         <div class="detail-section">
             <figure class="img-container">
                 <img :src="Mockup" class="detail-img">
@@ -13,44 +13,15 @@
     </div>
 </template>
 <script>
-const JsonFile = await import('~/src/projects.json');
-const route = useRoute();
-
 export default {
-    data() {
-        return {
-            ProjectName: '',
-            Mockup: '',
-            ProjectTools: '',
-            ProjectDesc: '',
-            pageName: ''
-        }
-    },
-    methods: {
-        checkSlug() {
-            // this.pageName = route.params.slug;
-            console.log('check slug');
-            this.pageName = $nuxt.$route.params.slug;
-            this.getData(this.pageName);
-        },
-        getData(pageName) {
-            console.log(pageName);
-            const myArray = JsonFile.Projects;
-            for (var i = 0; i < myArray.length; i++) {
-                if (myArray[i].slug === pageName) {
-                    this.ProjectName = myArray[i].name;
-                    this.Mockup = myArray[i].imgmockup;
-                    this.ProjectTools = myArray[i].tools;
-                    this.ProjectDesc = myArray[i].description;
-                }
-            }
-        },
-    },
-    mounted() {
-        this.checkSlug();
+    name: "ProjectDetails",
+    props: {
+        ProjectName: String,
+        Mockup: String,
+        ProjectTools: String,
+        ProjectDesc: String
     },
 }
-
 </script>
 <style>
 /* --------------------------------- project detail pop up */

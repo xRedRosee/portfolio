@@ -4,7 +4,7 @@
     <section class="projects">
         <ul class="projects-container">
             <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img" :ProjectTools="p.tools"
-                :ProjectDesc="p.description" :Mockup="p.imgmockup" :slug="p.slug"></ProjectCard>
+                :ProjectDesc="p.description" :Mockup="p.imgmockup" :page="p.page"></ProjectCard>
         </ul>
     </section>
 </template>
