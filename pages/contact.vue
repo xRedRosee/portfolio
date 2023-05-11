@@ -9,7 +9,7 @@
         <section class="contact-info">
             <div class="email-side">
                 <h2 class="contact-info-h2"> Email </h2>
-                <a href="mailto:irisrn2004@hotmail.com" target="_blank" class="email-adress"> irisrn2004@hotmail.com </a>
+                <a href="mailto:irisrn2004@gmail.com" target="_blank" class="email-adress"> irisrn2004@gmail.com </a>
             </div>
             <div class="socialmedia-side">
                 <h2 class="contact-info-h2"> Social Media </h2>
