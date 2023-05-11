@@ -9,6 +9,8 @@
             <article class="detail-text">
                 <p class="detail-tools"> {{ ProjectTools }}</p>
                 <p class="detail-desc"> {{ ProjectDesc }}</p>
+                <p v-if="ProjectLink != null" class="detail-link"><a :href="ProjectLink" target="_blank"
+                        class="detail-link">See code &rarr;</a></p>
             </article>
         </div>
     </div>
@@ -23,7 +25,8 @@ export default {
         ProjectName: String,
         Mockup: String,
         ProjectTools: String,
-        ProjectDesc: String
+        ProjectDesc: String,
+        ProjectLink: String
     },
 }
 </script>
@@ -106,6 +109,16 @@ export default {
 }
 
 .detail-desc {
+    color: var(--white);
+    font-family: var(--normalfont);
+    text-align: left;
+    width: 80%;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.detail-link {
+    text-decoration: none;
     color: var(--white);
     font-family: var(--normalfont);
     text-align: left;
