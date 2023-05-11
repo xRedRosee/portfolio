@@ -55,6 +55,7 @@ export default {
     gap: 25px;
     flex-wrap: wrap;
     animation: 0.5s ease-out opacitychange;
+    margin-bottom: 50px;
 }
 
 @keyframes opacitychange {

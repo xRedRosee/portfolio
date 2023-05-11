@@ -69,6 +69,16 @@
             "tools": "#HTML #CSS #JavaScript #JSON",
             "imgmockup": "dummyjson-mockup.jpg",
             "description": "With the use of the JSON API DummyJSON I created a admin dashboard. The admin can see the users of their website and search for specific user. There's also a product page with all the products on the webshop, and can be filitered by category. This website was created for a school project."
+        },
+        {
+            "id": 8,
+            "name": "Blade Runner scene with Blender",
+            "slug": "blade-runner-blender",
+            "page": "/project/blade-runner-blender",
+            "img": "bladerunner-img.jpg",
+            "tools": "#Blender #3D #Photoshop",
+            "imgmockup": "bladerunner-mockup.jpg",
+            "description": "The second time I worked with the 3D program Blender, I recreated a scene from the Blade Runner 2049 movie. With the use of arrays and different lights I tried to make the scene give of the same vibe as the movie. I rendered the scene with Cycles and added a finishing touch using Adobe Photoshop. This 3D render was made for my study."
         }
     ]
 }
