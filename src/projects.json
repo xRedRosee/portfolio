@@ -59,6 +59,16 @@
             "tools": "#HTML #CSS #JavaScript #API",
             "imgmockup": "cardisplay-mockup.jpg",
             "description": "I created a car display using HTML CSS and JavaScript, but not just an ordinary car display web page: no this one can be controlled using an XBOX controller! Connect your XBOX controller through BlueTooth and you can control the car display using the controller itself!"
+        },
+        {
+            "id": 7,
+            "name": "Dummy JSON admin dashboard",
+            "slug": "admin-dashboard",
+            "page": "/project/admin-dashboard",
+            "img": "dummyjson-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "dummyjson-mockup.jpg",
+            "description": "With the use of the JSON API DummyJSON I created a admin dashboard. The admin can see the users of their website and search for specific user. There's also a product page with all the products on the webshop, and can be filitered by category. This website was created for a school project."
         }
     ]
 }

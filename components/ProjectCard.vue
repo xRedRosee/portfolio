@@ -59,7 +59,7 @@ export default {
     overflow: hidden;
 }
 
-.project-link {
+.projectlink {
     text-decoration: none;
 }
 
