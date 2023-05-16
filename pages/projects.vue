@@ -12,7 +12,6 @@
 <script>
 import NavBar from '/././components/NavBar.vue';
 import ProjectCard from '/././components/ProjectCard.vue';
-const JsonFile = await import('~/src/projects.json');
 
 export default {
     data() {
@@ -22,6 +21,8 @@ export default {
     },
     methods: {
         async getData() {
+            const JsonFile = await import('~/src/projects.json');
+
             this.projectList = JsonFile.Projects;
         }
     },
