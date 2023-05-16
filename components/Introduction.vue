@@ -2,7 +2,7 @@
     <section class="introduction">
         <article class="intro-textside">
             <p class="intro-text">
-                My name is Iris Roemerman. I'm a 18 year old student living in a small town called Kessel in Limburg, the
+                My name is Iris Roemerman. I'm a 18 year old student living in Limburg, the
                 Netherlands.<br> I graduated from havo in 2021 and I'm currently studying ICT & Media Design at Fontys
                 University in Eindhoven. <br> I'm a very ambitious person that likes to learn new things and isn't afraid
                 for a challenge! <br> In my free
@@ -43,6 +43,27 @@ export default {
     margin-top: 20px;
     margin-left: 80px;
     width: 60%;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro-imageside {
@@ -52,6 +73,27 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .intro-img {

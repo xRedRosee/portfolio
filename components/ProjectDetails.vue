@@ -1,112 +1,36 @@
 <template>
-    <NuxtLink :to="page" variant="primary" class="projectlink">
-        <li class="project-card">
-            <img class="project-img" :src="Img">
-            <figcaption class="project-text">
-                <h2 class="project-name"> {{ ProjectName }}</h2>
-                <button class="see-more"> See more &rarr;</button>
-            </figcaption>
-        </li>
-    </NuxtLink>
+    <div class="project-detail">
+        <NuxtLink to="/projects/" class="close-btn"> &#10005; </NuxtLink>
+        <h1 class="detail-name"> {{ ProjectName }}</h1>
+        <div class="detail-section">
+            <figure class="img-container">
+                <img :src="Mockup" class="detail-img">
+            </figure>
+            <article class="detail-text">
+                <p class="detail-tools"> {{ ProjectTools }}</p>
+                <p class="detail-desc"> {{ ProjectDesc }}</p>
+                <p v-if="ProjectLink != null" class="detail-link"><a :href="ProjectLink" target="_blank"
+                        class="detail-link">See code &rarr;</a></p>
+            </article>
+        </div>
+    </div>
 </template>
-
 <script>
 export default {
-    name: "ProjectCard",
+    name: "ProjectDetails",
     setup() {
         const route = useRoute()
     },
-    data() {
-        return {
-            modalAlreadyOpen: false,
-        };
-    },
     props: {
-        Img: {
-            type: String,
-            default: '',
-            // required: true
-        },
         ProjectName: String,
-        Mockup: {
-            type: String,
-            default: '',
-        },
+        Mockup: String,
         ProjectTools: String,
         ProjectDesc: String,
-        page: String,
+        ProjectLink: String
     },
-    // methods: {
-    //     SeeDetail() {
-    //         // open modal
-    //         this.modalAlreadyOpen = true;
-    //         const body = document.querySelector('body');
-    //         body.classList.add('stop-scrolling');
-    //     },
-    //     CloseModal() {
-    //         // close modal
-    //         this.modalAlreadyOpen = false;
-    //         const body = document.querySelector('body');
-    //         body.classList.remove('stop-scrolling');
-    //     }
-    // }
 }
 </script>
-
 <style>
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-}
-
-.projectlink {
-    text-decoration: none;
-}
-
-.project-card {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    cursor: pointer;
-}
-
-.project-img {
-    height: 400px
-}
-
-.project-text {}
-
-.project-name {
-    color: white;
-    font-family: var(--normalfont);
-    font-size: 20px;
-    font-weight: normal;
-    margin: 0;
-    margin-top: 10px;
-}
-
-.see-more {
-    color: white;
-    font-family: var(--normalfont);
-    font-size: 20px;
-    margin: 0;
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 5px;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 0;
-}
-
-.see-more:visited {
-    color: white;
-    font-family: var(--normalfont);
-    font-size: 20px;
-    margin: 0;
-    text-decoration: none;
-}
-
 /* --------------------------------- project detail pop up */
 .project-detail {
     width: 100%;
@@ -144,12 +68,56 @@ export default {
     font-family: var(--headingfont);
     font-style: italic;
     margin-top: 60px;
+    animation: 0.5s ease-out slideInTitle;
+}
+
+@keyframes slideInTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideInTitle {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .detail-section {
     width: 100%;
     display: flex;
     flex-direction: row;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .img-container {
@@ -193,17 +161,18 @@ export default {
     font-weight: normal;
 }
 
+.detail-link {
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--normalfont);
+    text-align: left;
+    width: 80%;
+    font-size: 21px;
+    font-weight: normal;
+}
+
 /* -------------------------------------------- media queries */
 @media screen and (max-width: 768px) {
-    .page-heading {
-        font-size: 50px;
-        font-weight: 500;
-        margin-left: 0;
-        width: 90%;
-        text-align: center;
-    }
-
-    /* --------------------------------- project detail pop up */
     .project-detail {
         overflow: auto;
         align-items: center;

@@ -9,7 +9,7 @@
         <section class="contact-info">
             <div class="email-side">
                 <h2 class="contact-info-h2"> Email </h2>
-                <a href="mailto:irisrn2004@hotmail.com" target="_blank" class="email-adress"> irisrn2004@hotmail.com </a>
+                <a href="mailto:irisrn2004@gmail.com" target="_blank" class="email-adress"> irisrn2004@gmail.com </a>
             </div>
             <div class="socialmedia-side">
                 <h2 class="contact-info-h2"> Social Media </h2>
@@ -46,7 +46,31 @@ export default {
     font-weight: 500;
     margin-left: 80px;
     font-style: italic;
+    animation: 0.5s ease-out slideInTitle;
 }
+
+@keyframes slideInTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideInTitle {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 .page-heading-smalltext {
     font-family: var(--normalfont);
@@ -57,6 +81,27 @@ export default {
     margin-left: 80px;
     width: 60%;
     font-weight: normal;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .contact-info {
@@ -64,6 +109,27 @@ export default {
     flex-direction: row;
     width: 80%;
     margin-top: 60px;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .email-side {

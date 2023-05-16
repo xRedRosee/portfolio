@@ -4,7 +4,7 @@
     <section class="projects">
         <ul class="projects-container">
             <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img" :ProjectTools="p.tools"
-                :ProjectDesc="p.description" :Mockup="p.imgmockup"></ProjectCard>
+                :ProjectDesc="p.description" :Mockup="p.imgmockup" :page="p.page"></ProjectCard>
         </ul>
     </section>
 </template>
@@ -12,7 +12,7 @@
 <script>
 import NavBar from '/././components/NavBar.vue';
 import ProjectCard from '/././components/ProjectCard.vue';
-const JsonFile = await import('~/public/projects.json');
+const JsonFile = await import('~/src/projects.json');
 
 export default {
     data() {
@@ -23,7 +23,6 @@ export default {
     methods: {
         async getData() {
             this.projectList = JsonFile.Projects;
-            console.log(this.projectList)
         }
     },
     mounted() {
@@ -55,5 +54,27 @@ export default {
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
+    animation: 0.5s ease-out opacitychange;
+    margin-bottom: 50px;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 </style>
