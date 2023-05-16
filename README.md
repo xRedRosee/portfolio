@@ -6,13 +6,9 @@ Personal showcase portfolio from Iris Roemermann.
 
 I created a personal showcase portolio to showcase my skills, projects, personal information and to let people get in touch with me. The showcase portfolio can be used for internships as well.
 
-## Version of Vue and Nuxt
+## Version of Nuxt
 
-This portfolio is created using Nuxt 3 and Vue 3. The reason for this is because they are both newer versions and Vue 2 only is LTS till December 2023. Nuxt is a free and open-source framework with Vue.
-
-## Libraries used
-
-...
+This portfolio is created using Nuxt 3. The reason for this is because it's newer versions and Nuxt 2 only is LTS till December 2023. Nuxt is a free and open-source framework with Vue.
 
 ## How does this website work?
 
