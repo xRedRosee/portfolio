@@ -1,42 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Showcase Portfolio Iris Roemermann
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Personal showcase portfolio from Iris Roemermann.
 
-## Setup
+## Website purpose
 
-Make sure to install the dependencies:
+I created a personal showcase portolio to showcase my skills, projects, personal information and to let people get in touch with me. The showcase portfolio can be used for internships as well.
 
-```bash
-# yarn
-yarn install
+## Version of Nuxt
 
-# npm
-npm install
+This portfolio is created using Nuxt 3. The reason for this is because it's newer versions and Nuxt 2 only is LTS till December 2023. Nuxt is a free and open-source framework with Vue.
 
-# pnpm
-pnpm install
-```
+## How does this website work?
 
-## Development Server
+When starting up the website, you'll see a homepage with an introduction sentence and a navigation at the top. You can navigate through the pages to learn more about me and my skills, projects I worked on and to get in touch with me.
 
-Start the development server on `http://localhost:3000`
+## Contributors
 
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Iris Roemermann

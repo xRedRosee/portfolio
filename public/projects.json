@@ -1,0 +1,49 @@
+{
+    "Projects": [
+        {
+            "id": 1,
+            "name": "Sugar & Sweet website",
+            "slug": "sugar-sweet-website",
+            "img": "bakerywebsite-img.jpg",
+            "tools": "#Vue #HTML #CSS #JavaScript #JSON",
+            "imgmockup": "bakerywebsite-mockup.jpg",
+            "description": "A bakery with the name Sugar & Sweet really needs a website that matches with their name. I decided to create a one page website for the bakery with different pink colors. At the top there is a slideshow with some pictures, and while scrolling through the page there are some nice animations added. The website itself is made using Vue 3. The slideshow at the top is created with the Glide library and for the scroll animations the AOS library was used. This website is created for my study."
+        },
+        {
+            "id": 2,
+            "name": "Pokemon TCG website",
+            "slug": "Pokemon-TCG-website",
+            "img": "tcgwebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "tcgwebsite-mockup.jpg",
+            "description": "The Pokemon Trading Card Game is one of the most famous trading cards ever. The cards all have different values and for the collectors it would be nice to see the values represented with charts. At the homepage is a cool slideshow displaying some Pokemon cards of the Eeveelutions. This website is build with different libraries such as Glide, ChartJS and AnimeJS. I made this website for my study."
+        },
+        {
+            "id": 3,
+            "name": "Restyled Stradivarius homepage",
+            "slug": "Restyled-Stradivarius-homepage",
+            "img": "stradivariuswebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "stradivariuswebsite-mockup.jpg",
+            "description": "Stradivarius is one of my favorite shopping stores. For a challenge of at study I recreated and restyled the homepage of the Stradivarius website. I recreated the navigation function and the slideshow at the top but changed the rest of the homepage. The slideshow of the website is created using Glide."
+        },
+        {
+            "id": 4,
+            "name": "Logo Design Iris Roemermann",
+            "slug": "logo-design",
+            "img": "irlogo-img.jpg",
+            "tools": "#Adobe #Illustrator #Photoshop",
+            "imgmockup": "irlogo-mockup.jpg",
+            "description": "I designed a logo for my own name using Adobe Illustrator. I choose the color black and white because they give a minimalistic look to the logo. Later on I created several mockups with the logo in Adobe Photoshop to learn how to create mockups using Photoshop. This logo was designed for a study project."
+        },
+        {
+            "id": 3,
+            "name": "Restyled Stradivarius homepage",
+            "slug": "Restyled-Stradivarius-homepage",
+            "img": "stradivariuswebsite-img.jpg",
+            "tools": "#HTML #CSS #JavaScript #JSON",
+            "imgmockup": "stradivariuswebsite-mockup.jpg",
+            "description": "aaaaaa"
+        }
+    ]
+}
