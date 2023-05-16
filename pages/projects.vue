@@ -1,6 +1,6 @@
 <template>
     <NavBar></NavBar>
-    <h1 class="page-heading"> Projects </h1>
+    <h1 class="page-heading projects-heading"> Projects </h1>
     <section class="projects">
         <ul class="projects-container">
             <ProjectCard v-for="p in projectList" :key="p.id" :ProjectName="p.name" :Img="p.img" :ProjectTools="p.tools"
@@ -37,6 +37,10 @@ export default {
 .stop-scrolling {
     height: 100%;
     overflow: hidden;
+}
+
+.projects-heading {
+    margin-top: 60px;
 }
 
 .projects {
