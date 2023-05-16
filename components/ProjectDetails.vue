@@ -68,12 +68,56 @@ export default {
     font-family: var(--headingfont);
     font-style: italic;
     margin-top: 60px;
+    animation: 0.5s ease-out slideInTitle;
+}
+
+@keyframes slideInTitle {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes slideInTitle {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .detail-section {
     width: 100%;
     display: flex;
     flex-direction: row;
+    animation: 0.5s ease-out opacitychange;
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .img-container {
