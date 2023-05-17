@@ -3,4 +3,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxt/content'
       ],
+      meta: {
+        title: 'Iris Roemermann',
+      }
 })
