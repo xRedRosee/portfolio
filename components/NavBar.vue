@@ -138,7 +138,7 @@ export default {
     width: 30px;
     height: 2px;
     background-color: var(--white);
-    margin: 5px auto;
+    margin: 6px auto;
     display: block;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
