@@ -1,6 +1,36 @@
 {
     "Projects": [
         {
+            "id": 9,
+            "name": "Focus app",
+            "slug": "/focus-app",
+            "page": "/project/focus-app",
+            "img": "/./Projects/focus-img.jpg",
+            "tools": "#Nuxt #Vue #JSON #PWA #Adobe",
+            "imgmockup": "focus-mockup.jpg",
+            "description": "During my third semester I worked out a photography social media platform. I designed a logo and came up with a styling that fitted the platform. Then I developed a PWA using Nuxt. I worked with JSON server and different requests to get, add and change the data. Users can read posts, like them and comment on them. They also can create an account, view their own account and create posts themselves."
+        },
+        {
+            "id": 10,
+            "name": "Pokemon in Blender",
+            "slug": "/pokemon-blender",
+            "page": "/project/pokemon-blender",
+            "img": "/./Projects/pokemon-img.jpg",
+            "tools": "#3D #Modelling #Blender",
+            "imgmockup": "pokemon-mockup.jpg",
+            "description": "To improve my 3D modelling skills, I worked on the Pokemon Marill in Blender. I worked with different modifiers such as Booleans and Subdivision. For the feet and arms I used the sculpture mode to reform the shape and get the correct shape."
+        },
+        {
+            "id": 11,
+            "name": "McDonald's social media post",
+            "slug": "/mcdonalds-post",
+            "page": "/project/mcdonalds-post",
+            "img": "/./Projects/mcdonaldspost-img.jpg",
+            "tools": "#Adobe #Illustrator #Photoshop",
+            "imgmockup": "mcdonaldspost-mockup.jpg",
+            "description": "For the client group project I had during my third semester, I worked on a social media post that the McDonald's could post. The post advertises the game and merchandise we designed and created and also advertises the McDonald's app. I made the social media post using Adobe Illustrator. The mockup with the phone is made with Adobe Photoshop. I created the background myself."
+        },
+        {
             "id": 1,
             "name": "Sugar & Sweet website",
             "slug": "/sugar-sweet-website",
@@ -32,7 +62,7 @@
         },
         {
             "id": 4,
-            "name": "Logo Design Iris Roemermann",
+            "name": "Logo design Iris Roemermann",
             "slug": "logo-design",
             "page": "/project/logo-design",
             "img": "/./Projects/irlogo-img.jpg",
@@ -41,8 +71,18 @@
             "description": "I designed a logo for my own name using Adobe Illustrator. I choose the color black and white because they give a minimalistic look to the logo. Later on I created several mockups with the logo in Adobe Photoshop to learn how to create mockups using Photoshop. This logo was designed for a study project."
         },
         {
+            "id": 8,
+            "name": "Blade Runner scene with Blender",
+            "slug": "blade-runner-blender",
+            "page": "/project/blade-runner-blender",
+            "img": "/./Projects/bladerunner-img.jpg",
+            "tools": "#Blender #3D #Photoshop",
+            "imgmockup": "bladerunner-mockup.jpg",
+            "description": "The second time I worked with the 3D program Blender, I recreated a scene from the Blade Runner 2049 movie. With the use of arrays and different lights I tried to make the scene give of the same vibe as the movie. I rendered the scene with Cycles and added a finishing touch using Adobe Photoshop. This 3D render was made for my study."
+        },
+        {
             "id": 5,
-            "name": "Snake Game",
+            "name": "Snake game",
             "slug": "snake-game",
             "page": "/project/snake-game",
             "img": "/./Projects/snakegame-img.jpg",
@@ -69,16 +109,6 @@
             "tools": "#HTML #CSS #JavaScript #JSON",
             "imgmockup": "dummyjson-mockup.jpg",
             "description": "With the use of the JSON API DummyJSON I created a admin dashboard. The admin can see the users of their website and search for specific user. There's also a product page with all the products on the webshop, and can be filitered by category. This website was created for a school project."
-        },
-        {
-            "id": 8,
-            "name": "Blade Runner scene with Blender",
-            "slug": "blade-runner-blender",
-            "page": "/project/blade-runner-blender",
-            "img": "/./Projects/bladerunner-img.jpg",
-            "tools": "#Blender #3D #Photoshop",
-            "imgmockup": "bladerunner-mockup.jpg",
-            "description": "The second time I worked with the 3D program Blender, I recreated a scene from the Blade Runner 2049 movie. With the use of arrays and different lights I tried to make the scene give of the same vibe as the movie. I rendered the scene with Cycles and added a finishing touch using Adobe Photoshop. This 3D render was made for my study."
         }
     ]
 }
