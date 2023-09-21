@@ -11,6 +11,8 @@
                 <p class="detail-desc"> {{ ProjectDesc }}</p>
                 <p v-if="ProjectLink != null" class="detail-link"><a :href="ProjectLink" target="_blank"
                         class="detail-link">See code &rarr;</a></p>
+                <p v-if="WebsiteLink != null" class="detail-link"><a :href="WebsiteLink" target="_blank"
+                        class="detail-link">Visit website &rarr;</a></p>
             </article>
         </div>
     </div>
@@ -26,7 +28,8 @@ export default {
         Mockup: String,
         ProjectTools: String,
         ProjectDesc: String,
-        ProjectLink: String
+        ProjectLink: String,
+        WebsiteLink: String
     },
 }
 </script>

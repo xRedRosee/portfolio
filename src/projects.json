@@ -1,6 +1,16 @@
 {
     "Projects": [
         {
+            "id": 12,
+            "name": "Guitarworks website",
+            "slug": "/guitarworks",
+            "page": "/project/guitarworks",
+            "img": "/./Projects/guitarworkswebsite-img.jpg",
+            "tools": "#Nuxt #Vue #HTML #CSS #JavaScript #AdobeXD",
+            "imgmockup": "guitarworkswebsite-mockup.jpg",
+            "description": "During my free time I worked on a website for Guitarworks. Guitarworks is a company from my father and he needed a new website to display his works and general information. I first made a design in Adobe XD, with his wants and needs and later coded it using Nuxt and JavaScript. I added slideshows on the pages to display the images with his work."
+        },
+        {
             "id": 9,
             "name": "Focus app",
             "slug": "/focus-app",
