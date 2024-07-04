@@ -2,9 +2,9 @@
     <section class="introduction">
         <article class="intro-textside">
             <p class="intro-text">
-                My name is Iris Roemermann. I'm a 19 year old student living in Limburg, the
+                My name is Iris Roemermann. I'm a 20 year old student living in Limburg, the
                 Netherlands.<br> I graduated from havo in 2021 and I'm currently studying ICT & Media Design at Fontys
-                University in Eindhoven. I'm now in semester 4 and following the specialization smart mobile.
+                University in Eindhoven. I'm now in semester 5 and doing my internship.
                 <br> I describe myself as a very ambitious person that likes to learn new things and isn't afraid
                 for a challenge!
                 <br> In my free time I like to play games, go shopping or do photography.
