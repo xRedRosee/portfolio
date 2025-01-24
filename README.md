@@ -2,10 +2,6 @@
 
 This is a portfolio website I, Iris Roemermann, worked on for myself to showcase who I am as a designer, what my skills are and projects I worked on. For this portfolio I also worked with GSAP. The portfolio itself is made with Vue 3.
 
-## TO DO:
-
-- Work on project details pages
-
 ## NPM info
 
 ### Installation npm packages
@@ -24,6 +20,11 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+To view the build:
+```sh
+serve -s dist
 ```
 
 ### Version of packages
