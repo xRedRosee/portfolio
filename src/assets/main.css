@@ -1,0 +1,98 @@
+@import "./reset.css";
+@import url("https://use.typekit.net/ehf7qpq.css");
+@import url("https://use.typekit.net/xqj4hwr.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+
+:root {
+  --text-color-light: #ffffff;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-yellow: #ffe500;
+  --color-orange: #ff6600;
+
+  --font-normal: "dm-sans", sans-serif;
+  --font-normal-extralight: 200;
+  --font-normal-regular: 400;
+  --font-normal-bold: 700;
+
+  --font-decorative: "ivyora-display", sans-serif;
+  --font-decorative-regular: 400;
+
+  --nav-font-size: 22px;
+
+  --font-size-header-big: 90px;
+  --font-size-default: 22px;
+  --font-size-default-small: 18px;
+
+  --font-size-header-big-sm: 10.5vmin;
+  --font-size-default-sm: 5vmin;
+  --font-size-default-small-sm: 4vmin;
+}
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-black);
+  font-family: var(--font-normal);
+  line-height: 1.6;
+  color: var(--color-white);
+}
+
+a {
+  pointer-events: auto;
+}
+
+button {
+  pointer-events: auto;
+}
+
+.section-header-title {
+  font-size: var(--font-size-header-big);
+  font-family: var(--font-normal);
+  font-weight: var(--font-normal-regular);
+  font-style: italic;
+  color: var(--text-color-light);
+}
+
+.section-default-text {
+  font-size: var(--font-size-default);
+  font-family: var(--font-normal);
+  font-weight: var(--font-normal-regular);
+  color: var(--text-color-light);
+}
+
+.bold {
+  font-weight: var(--font-normal-bold);
+}
+
+/* -------------------------------------------- media queries */
+@media screen and (max-width: 1024px) {
+  .section-header-title {
+    font-size: var(--font-size-header-big-sm);
+  }
+
+  .section-default-text {
+    font-size: var(--font-size-default-sm);
+    font-family: var(--font-normal);
+    font-weight: var(--font-normal-regular);
+    color: var(--text-color-light);
+  }
+
+  .bold {
+    font-weight: var(--font-normal-bold);
+  }
+}
